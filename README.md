@@ -46,8 +46,6 @@ Traditional monitoring systems rely on fixed thresholds and snapshot readings, w
 
 Patient Vitals → Feature Engineering → Time-Series Encoder → Risk Classifier → Explanation Engine → Alert System
 
-yaml
-Copy code
 
 ### Pipeline Flow
 
@@ -101,6 +99,7 @@ Main prediction interface:
   "risk_category": "HIGH",
   "explanation": "Rising heart rate + falling blood pressure"
 }
+
 7. AI Agents (Decision Layer)
 Alert Agent — triggers alerts
 
@@ -110,7 +109,7 @@ Trend Agent — analyzes time-series changes
 
 Reasoning Agent — explains predictions
 
-Suggestion Agent — provides recommendations
+Suggestion Agent — provides recommendations\
 
 8. Backend API (main.py)
 Serves prediction endpoints
@@ -148,15 +147,18 @@ Electronic Health Records
 Simulated clinical data
 
 📦 Installation
+
 bash
 Copy code
 git clone https://github.com/your-repo/trisense-ai
 cd trisense-ai
 pip install -r requirements.txt
+
 ▶️ Run Training
 bash
 Copy code
 python train_pipeline.py
+
 🔮 Run Prediction
 python
 Copy code
@@ -164,10 +166,12 @@ from inference import predict_deterioration_risk
 
 result = predict_deterioration_risk(vitals_6hr)
 print(result)
+
 🧪 Run Demo
 bash
 Copy code
 python demo.py
+
 📈 Model Performance
 The system prioritizes:
 
@@ -224,26 +228,9 @@ Reduced clinician workload
 
 Proactive healthcare delivery
 
-👨‍💻 Team
-Flexiroasters — Healthcare AI Innovation Team
+👨‍💻Built By Team
+Flexiroasters 
 Built during Ekathon 2026 — Health AI on India’s Digital Rails.
 
 📜 License
 MIT License
-
-yaml
-Copy code
-
----
-
-If you want next, I can also help you add:
-
-✅ GitHub badges (build status, license, Python version)  
-✅ architecture diagram image  
-✅ demo screenshots section  
-✅ API docs section  
-✅ Docker deployment guide  
-✅ “How it works” visual flow  
-✅ research references  
-
-Just tell me 👍
